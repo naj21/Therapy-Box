@@ -10,21 +10,28 @@
 		<h2>HACKATHON</h2>
 	</div>
 	
-	<form method="post" action="register.php">
+	<form method="post" action="register.php" class="col-6">
 		<?php include ('errors.php'); ?>
-		<div class="input-text">
-			Username    <input type="text" name="username" placeholder="name"value="<?php echo $username; ?>">
+		<div>
+			<div class="input-text col-4" >
+				Username    <input type="text" name="username" placeholder="name"value="<?php echo $username; ?>">
+			</div>
+			<div class="input-text col-4 right">
+				Email    <input type="text" name="email" placeholder="name@example.com"value="<?php echo $email; ?>">
+			</div>
 		</div>
-		<div class="input-text">
-			Email    <input type="text" name="email" placeholder="name@example.com"value="<?php echo $email; ?>">
+		<div>
+			<div class="input-text col-4">
+				Password    <input type="password" name="password_1" placeholder="name">
+			</div>
+			<div class="input-text col-4 right">
+				Confirm Password    <input type="password" name="password_2" placeholder="password">
+			</div>
 		</div>
-		<div class="input-text">
-			Password    <input type="password" name="password_1" placeholder="name">
+		<div class="images">
+			<input type="image" value="Add Picture" class='image' height="100px" width="200px">
 		</div>
-		<div class="input-text">
-			Confirm Password    <input type="password" name="password_2" placeholder="password">
-		</div>
-		<div class="input-text">
+		<div class="input-text submit">
 			<button type="submit" name="register" class="btn">Register</button>
 		</div>
 		<p>
